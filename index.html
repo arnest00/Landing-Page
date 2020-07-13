@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Rent out your time and effort with selfLESS</title>
+</head>
+<body>
+
+  <div id="navbar-container">
+    <nav id="navbar">
+      <div id="navbar-left">
+        <a id="navbar-brand" href="#">sL</a>
+        <div id="navbar-search">
+          <i class="material-icons">search</i>
+          <input type="text" placeholder="What do you need done?">
+        </div>
+      </div>
+      <div id="navbar-right">
+        <ul id="navbar-menu">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+          <li></li>
+        </ul>
+        <span class="dark-mode-btn" id="moon-btn"><i class="material-icons">nights_stay</i></span>
+        <span class="dark-mode-btn hidden" id="sun-btn"><i class="material-icons">wb_sunny</i></span>
+      </div>
+    </nav>
+  </div>
+
+  <div id="hero">
+    <div id="hero-cta">
+      <h1>Earn money as a selfLESS provider</h1>
+      <p>Meet the inevitable endpoint of the gig economy — rent out your work time doing whatever non-illegal thing a renter needs so you can spend your leisure time doing what matters to you.</p>
+      <button>Get started</button>
+    </div>
+  </div>
+
+  <div id="calculator-container">
+    <h2>How much can you earn in <br><span id="rnd-city"></span>?</h2>
+    <p>Tell us where you are and what you can offer</p>
+    <div id="calculator">
+      <div id="input-container">
+        <div id="city-input-container"></div>
+        <div id="select-container">
+          <select name="work" id="work-select" disabled>
+            <option value="" disabled selected>Type of work</option>
+            <option value="1">Unskilled labor</option>
+            <option value="2">Semiskilled labor</option>
+            <option value="3">Skilled labor</option>
+            <option value="4">Professional labor</option>
+            <option value="5">Emotional labor</option>
+          </select>
+          <select name="length" id="length-select" disabled>
+            <option value="" disabled selected>Length of offer</option>
+            <option value="0">Supershort-term</option>
+            <option value="1">Short-term</option>
+            <option value="2">Long-term</option>
+            <option value="3">Hyperlong-term</option>
+          </select>
+        </div>
+      </div>
+      <div id="result-container">
+        <span>up to</span>
+        <span id="calc-result">???</span>
+        <span>per rental</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer-top">
+      <div id="footer-top-container">
+        <section>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">How selfLESS works</a></li>
+            <li><a href="#">Our mission statement</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Trust and safety</a></li>
+            <li><a href="#">selfPOINTS rewards</a></li>
+            <li><a href="#">selfLESS in the news</a></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">selfZINE</a></li>
+            <li><a href="#">selfBBS</a></li>
+            <li><a href="#">Invite friends</a></li>
+            <li><a href="#">Gift cards</a></li>
+            <li><a href="#">Work at selfLESS</a></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Provide</h4>
+          <ul>
+            <li><a href="#">Becoming a provider</a></li>
+            <li><a href="#">Remote providing</a></li>
+            <li><a href="#">Message from CEO &Ouml;lvir J&oacute;nasson</a></li>
+            <li><a href="#">Responsible providing</a></li>
+            <li><a href="#">Resource center</a></li>
+            <li><a href="#">Community center</a></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">COVID-19 updates</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Renter cancellations</a></li>
+            <li><a href="#">Tax resources</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div id="footer-bottom">
+      <div id="footer-bottom-left">
+        <div>
+          <span><span id="symbol">©</span> 2020 selfLess, Inc. All rights reserved</span>
+          <span aria-disabled="true"> | </span>
+          <a href="#">Privacy</a>
+          <span aria-disabled="true"> | </span>
+          <a href="#">Terms</a>
+          <span aria-disabled="true"> | </span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+      <div id="footer-bottom-right">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/locations.js"></script>
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
