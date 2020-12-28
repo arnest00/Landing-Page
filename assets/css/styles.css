@@ -15,7 +15,7 @@
   --bg-color: #333;
   --heading-color: #fff;
   --border-color: #484848;
-  --cta-color: #484848;
+  --cta-color: #333;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
   font-size: 16px;
 }
 
-h1, h2, h4, ion-icon {
+h1, h2, h3, ion-icon {
   color: var(--heading-color);
 }
 
@@ -254,6 +254,8 @@ a:hover {
 #result-container {
   padding: 1rem;
   width: 30%;
+  font-weight: 700;
+  font-size: 1.25rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -263,11 +265,6 @@ a:hover {
 #result-container span {
   background-color: var(--primary-color);
   color: var(--cta-color);
-}
-
-#calc-result {
-  font-weight: 700;
-  font-size: 1.25rem;
 }
 
 #footer-top {
@@ -327,4 +324,10 @@ a:hover {
 
 ion-icon {
   font-size: 1.5rem;
+}
+
+@media screen {
+  .screen-reader-text {
+    display: none;
+  }
 }
