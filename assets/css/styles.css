@@ -326,6 +326,63 @@ ion-icon {
   font-size: 1.5rem;
 }
 
+/* ============ Rendering at 880px and below */
+@media (max-width: 880px) {
+  #hero:before {
+    background-position: 70% 20%;
+  }
+
+  #hero-cta {
+    width: 380px;
+  }
+
+  #footer-top-container section {
+    margin: 0.5rem;
+  }
+}
+
+/* ============ Rendering at 671px and below */
+@media (max-width: 671px) {
+  #navbar-search {
+    display: none;
+  }
+
+  #calculator-container p {
+    text-align: center;
+  }
+
+  #calculator {
+    justify-content: space-around;
+  }
+
+  #hero:before {
+    background-position: 20% 20%;
+  }
+
+  #hero-cta {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  #footer-top-container {
+    flex-direction: column;
+  }
+
+  #footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer-bottom-left div {
+    margin-bottom: 1.5rem;
+  }
+
+  ion-icon {
+    font-size: 2rem;
+  }
+}
+
+/* ============ Rendering on all screens */
 @media screen {
   .screen-reader-text {
     display: none;
